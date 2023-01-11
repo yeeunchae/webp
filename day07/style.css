@@ -1,0 +1,16 @@
+
+        *{color:green;}
+        li{color:brown;}
+        p#special{color:plum;}
+        .red{background-color: beige;
+            width:200px; height: 200px;}
+        button{
+            border:1px solid hotpink;
+        }
+        button:hover{
+            color:red;
+            background-color: azure;
+        }
+        a[href]{
+            color:gray;
+        }

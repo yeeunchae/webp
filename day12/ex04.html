@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            if(f1.subject.value==0){
+                alert("반드시 과목은 선택하셔야 합니다.");
+                return false;
+            }
+            else return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" action="">
+        지금 수강중인 과목<select name="subject">
+            <option value="0">과목선택</option>
+            <option value="객체지향언어">객체지향언어</option>
+            <option value="이산수학">이산수학</option>
+            <option value="웹프로그래밍">웹프로그래밍</option>
+        </select>
+        <p>
+            <input type="button" onclick="check()" value="보내기">
+        </p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>주문개수와 물품을 선택</h2>
+    주문개수:<input type="number" min="1" max="5" value="1"개><br>
+    주문개수:<input type="range" min="1" max="10" value="1"개><br>
+    자원물품<small>(1인당 5개)</small>
+    <input type="number" min="0" max="50" step="5" value="0"><br>
+    희망단계<small>(하 중 상)</small>
+    <input type="range" min="1" max="3" value="1" list="temp">
+    <datalist id="temp">
+        <option value="1">하</option>
+        <option value="2">중</option>
+        <option value="3">상</option>
+    </datalist>
+    <hr>
+    색상선택:<input type="color" value="#00eeff" onchange="document.body.style.color=this.value">
+    <h2>날짜선택</h2>
+    날짜 :<input type="date" value="2022-10-04"><br>
+    월 선택<input type="month" value="2022-10-04"> 일 선택<input type="week" value="2022-10-04"><br>
+    현재 시간과 날짜:<input type="datetime-local"><br>
+    제출기간<input type="datetime-local">-<input type="datetime-local"><br>
+    파일업로드:<input type="file" value="파일 찾기"><br>
+    검색어<input type="search"><br>
+    시험시간 <input type="text" name="subtime" value="오전10:00~11:00" readonly><p>
+        <hr>
+        <input type="image" src="media/button.png" alt="이미지버튼"><br>
+        <button>
+            <img src="media/button.png">
+        </button>
+    </p>
+</body>
+</html>

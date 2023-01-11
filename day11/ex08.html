@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkEmpty(){
+            if(f1.user.value=="")
+            alert("이름은 필수입니다");
+            f1.user.focus();
+            return false;
+        }
+        function checkLength(){
+            if(f1.id.value.length>=6 && f1.id.value.length<=8)
+            return false;
+            else
+            alert("아이디는 6~8 사이의 문자만 입력가능");
+            f1.user.focus();
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h3>회원가입</h3>
+    <form name="f1">
+        이름:<input type="text" name="user">
+        <input type="button" onclick="checkEmpty()" value="확인"><br>
+        주소:<input type="text" id="addr"/><br/>
+        생일:<input type="date" id="birthday"/><br/>
+        아이디(6-8문자):<input type="text" name="id">
+        <input type="button" onclick="checkLength()" value="확인"><br/>
+        이메일:<input type="email" id="email"/><br/>
+        휴대폰:<input type="tel" id="phone"/><br/>
+        <input type="submit" value="확인"><br/>
+    </form>
+</body>
+</html>

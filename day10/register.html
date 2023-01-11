@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        
+        label>span{width:120px; display:inline-block; text-align: left;}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>회원정보입력</legend>
+        <label><span>아이디</span> <input type="idd" name="id" value="" required></label>
+        <label>&nbsp;<input type="button" value="중복검사"></label><br>
+        <label><span>패스워드</span> <input type="password" name="pwd" required></label><br>
+        <label><span>패스워드 확인</span> <input type="password" name="pwdcomfir" required></label><br>
+        <label><span>이름</span> <input type="text" name="name" required></label><br>
+        <label><span>휴대폰 번호</span> <input type="tel" required></label><br>
+        <label><span>이메일</span> <input type="email"></label><br>
+        <label><span>생일</span> <input type="datetime-local"></label><br>
+        <label><span>홈페이지</span> <input type="url"></label><br>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="mf" value="남성">남성</label><br>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="mf" value="여성">여성</label>
+    </fieldset>
+    <input type="submit" vlaue="제출">&nbsp;
+    <input type="reset" value="초기화">
+</body>
+</html>

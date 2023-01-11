@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            if(f1.user.value=="")
+            {
+                alert("이름은 반드시 필수입력입니다");
+                f1.user.focus();
+            }
+            if(f1.id.value.length>=6 && f1.id.value.length<=8){
+                 return true;
+            }
+            else{
+            alert("아이디는 6~8자만 가능합니다");
+            f1.id.focus();
+            return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" action="">
+        이름:<input type="text" name="user"><br>
+        아이디:<input type="text" name="id"><br>(아이디는 반드시 6~8까지 숫자입력)
+        <input type="button" value="보내기" onclick="check()">
+    </form>
+</body>
+</html>

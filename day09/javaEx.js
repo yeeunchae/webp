@@ -1,0 +1,1 @@
+document.write("가톨릭대");

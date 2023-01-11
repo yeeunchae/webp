@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*글꼴관련 스타일*/
+        body{font-family: 궁서체;
+        margin:10;
+        background:url('images/windmill.jpg');
+        background-size:cover;
+        }
+        /*background-image:url('images/bg3.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-attachment: fixed;}*/
+        h1,h2{font-family: 굴림체;
+        color:brown;}
+        p#t1{
+            font:bold italic 20pt 돋움체;
+            text-decoration: underline;
+        }
+        p#t2{
+            text-decoration: overline;
+        }
+        p.t3{
+            text-decoration: line-through overline;
+            text-shadow: 10px 10px 10px blue;
+        }
+        #box1{width:100px; height:100px;
+            border:2px dashed black;
+            margin-left:50px;
+            padding-left:20px;}
+        a:link{
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color:violet;
+        }
+        a:active{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>가톨릭대학교</h1>
+    <h2 style="color:aquamarine">미디어기술콘텐츠학과</h2><!--외부보다 내부가 우선순위가 더 높음-->
+    <p id="t1">웹프로그래밍</p>
+    <p id="t2">객체지향프로그래밍</p>
+    <p class="t3">파이썬</p>
+    <div id="box1">box</div>
+    <a href="http://www.naver.com">네이버</a>
+</body>
+</html>
